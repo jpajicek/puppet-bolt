@@ -1,0 +1,7 @@
+ 1. Redirect to port 443 to a maintenance page and whitelist ip address
+
+ bolt plan run maintenance::start --target 10.2.21.19 --password-prompt whitelist=2.2.2.2
+
+ 2. Stop maintenance (redirect)
+
+ bolt plan run maintenance::stop --target 10.2.21.19 --password-promp

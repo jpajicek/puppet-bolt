@@ -1,0 +1,11 @@
+---
+steps:
+  - command: "/sbin/iptables -F -t nat"
+    description: "Flush IP tables"
+    target: "*"
+  - task: service
+    description: "Restart apache service"
+    target: "*"
+    parameters:
+      name: apache2
+      action: restart

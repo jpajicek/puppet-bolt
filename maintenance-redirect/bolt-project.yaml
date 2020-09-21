@@ -1,0 +1,19 @@
+---
+name: maintenance
+
+apply_settings:
+  show_diff: true
+color: false
+compile-concurrency: 1
+concurrency: 50
+format: rainbow
+log:
+  console:
+    level: info
+  "/tmp/debug.log":
+    append: true
+    level: debug
+modulepath:
+- "~/.puppetlabs/bolt/modules"
+- "~/.puppetlabs/bolt/site-modules"
+
